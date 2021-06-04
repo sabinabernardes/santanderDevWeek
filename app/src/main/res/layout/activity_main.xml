@@ -18,6 +18,15 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp" />
 
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/red_primary"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_usuario"
         android:layout_width="0dp"
@@ -25,6 +34,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
         android:text="Olá, Sabina"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
@@ -35,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="08dp"
         android:text="Ag 2021L"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/tv_usuario"
@@ -44,13 +55,118 @@
         android:id="@+id/tv_cc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="08dp"
         android:layout_marginLeft="08dp"
+        android:layout_marginTop="08dp"
         android:text="CC 255122445-ML"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_ag"
         app:layout_constraintTop_toBottomOf="@+id/tv_usuario" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:elevation="5dp"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ag">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_refresh_black_24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_visibility_black_24dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_saldo_disponivel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="08dp"
+                android:text="@string/txt_saldo_disponivel"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/iv_refresh"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_saldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="@string/txt_saldo"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/iv_refresh"
+                app:layout_constraintTop_toTopOf="@+id/iv_refresh" />
+
+            <TextView
+                android:id="@+id/tv_saldo_mais_limite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="08dp"
+                android:text="Saldo + Limite "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_saldo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_saldo" />
+
+            <TextView
+                android:id="@+id/tv_saldo_limite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="08dp"
+                android:layout_marginTop="08dp"
+                android:text="@string/txt_saldo"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/tv_saldo_mais_limite"
+                app:layout_constraintTop_toBottomOf="@+id/tv_saldo" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="16dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@+id/tv_saldo_limite" />
+
+            <TextView
+                android:id="@+id/tv_ver_extrato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_ver_extrato"
+                android:textColor="@color/red_secondary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
