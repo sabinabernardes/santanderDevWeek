@@ -3,4 +3,7 @@
     <string name="txt_saldo_disponivel">Saldo disponível</string>
     <string name="txt_saldo">R$ 1.000.590,90</string>
     <string name="txt_ver_extrato">Ver extrato</string>
+    <string name="txt_pagar">Pagar</string>
+    <string name="txt_transferir">Transferir</string>
+    <string name="txt_recarga">Recarga</string>
 </resources>
