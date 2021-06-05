@@ -21,7 +21,7 @@
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/cor_ricardo"
+        android:background="@color/red_primary"
         app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -258,7 +258,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cv_recarga"
-            android:layout_width="141dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
@@ -285,18 +285,6 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ricardoo"
-        android:textColor="#121010"
-        android:textSize="34sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mv_card_transferir" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
