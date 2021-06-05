@@ -1,7 +1,8 @@
-package com.example.santanderdevweek
+package com.example.santanderdevweek.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.santanderdevweek.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
