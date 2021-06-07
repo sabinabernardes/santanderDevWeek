@@ -1,10 +1,10 @@
-package com.example.santanderdevweek.data
+package com.example.santanderdevweek.data.model
 
 data class Conta(
     val numero:String,
     val agencia:String,
     val saldo:String,
     val limite:String,
-    val cliente:Cliente,
-    val cartao:Cartao
+    val cliente: Cliente,
+    val cartao: Cartao
 )

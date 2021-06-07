@@ -1,4 +1,4 @@
-package com.example.santanderdevweek.ui
+package com.example.santanderdevweek.ui.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,7 +6,8 @@ import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.santanderdevweek.R
-import com.example.santanderdevweek.data.Conta
+import com.example.santanderdevweek.data.model.Conta
+import com.example.santanderdevweek.ui.viewmodel.MainViewModel
 
 class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: MainViewModel
@@ -16,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById((R.id.toolbar)))
 
         val viewModel = ViewModelProvider(this,
-            MainViewModel.MainViewModelFactory()).get(MainViewModel::class.java)
+            MainViewModel.MainViewModelFactory()
+        ).get(MainViewModel::class.java)
         viewModel.buscarContaCliente().observe(this, Observer {result ->
             bindOnView(result)
         })
