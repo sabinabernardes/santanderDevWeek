@@ -1,8 +1,8 @@
 package com.example.santanderdevweek.data.local
 
-import com.example.santanderdevweek.data.Cartao
-import com.example.santanderdevweek.data.Cliente
-import com.example.santanderdevweek.data.Conta
+import com.example.santanderdevweek.data.model.Cartao
+import com.example.santanderdevweek.data.model.Cliente
+import com.example.santanderdevweek.data.model.Conta
 
 class FakeData {
     fun getLocalData(): Conta {

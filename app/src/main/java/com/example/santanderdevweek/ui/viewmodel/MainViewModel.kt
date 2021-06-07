@@ -1,11 +1,11 @@
-package com.example.santanderdevweek.ui
+package com.example.santanderdevweek.ui.viewmodel
 
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.santanderdevweek.data.Conta
+import com.example.santanderdevweek.data.model.Conta
 import com.example.santanderdevweek.data.local.FakeData
 
 class MainViewModel: ViewModel() {
